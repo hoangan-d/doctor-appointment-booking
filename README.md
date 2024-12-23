@@ -34,7 +34,7 @@ npm start
 
 Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
 
-feontend
+frontend
 ```bash
 npm run dev
 ```
@@ -42,7 +42,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-Use npm run dev to start the development server and npm run build for production.
+Use npm run dev to start the frontend, npm run build for production and npm start to start backend server.
 
 Project Structure:
 
