@@ -1,5 +1,5 @@
 This is a Frontend [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-and Backend Node.js vs Express.js
+and Backend [Node.js](https://nodejs.org) vs [Express.js](https://expressjs.com/)
 ## Getting Started
 
 First, run the development server:
