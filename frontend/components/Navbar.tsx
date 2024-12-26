@@ -76,7 +76,7 @@ const Navbar = () => {
                                 <Popover >
                                     <PopoverTrigger className="overflow-hidden rounded-full shadow-inner">
                                         <span className="sr-only">Toggle dashboard menu</span>
-                                        <img src={userData && (typeof userData.image === 'string' ? userData.image : '/guest.png')} alt='avatar' className="w-8 h-8 rounded-full" />
+                                        <img src={userData && (typeof userData.image === 'string' ? userData.image : "/guest.png") || '/guest.png'} alt='avatar' className="w-8 h-8 rounded-full" />
                                     </PopoverTrigger>
                                     <PopoverContent>
 
