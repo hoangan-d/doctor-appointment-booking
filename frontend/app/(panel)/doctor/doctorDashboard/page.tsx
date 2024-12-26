@@ -67,7 +67,7 @@ const Dashboard = () => {
                     {
                         dashData.latestAppointments.map((item, index) => (
                             <div key={index} className='flex items-center px-6 py-3 gap-3 hover:bg-gray-100'>
-                                <img src={item.userData.image} alt="" className='rounded-full w-10 h-10' />
+                                <img src={item.userData.image ||'/guest.png'} alt="" className='rounded-full w-10 h-10' />
                                 <div className='flex-1 text-sm'>
                                     <p className='text-gray-800 font-medium'>{item.userData.name}</p>
                                     <p className='text-gray-600'>{item.slotDate}</p>
