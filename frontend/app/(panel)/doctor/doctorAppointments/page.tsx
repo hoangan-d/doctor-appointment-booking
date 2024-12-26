@@ -45,14 +45,14 @@ const DoctorAppointment = () => {
                                                     items-center text-gray-500 py-3 px-6 border-b hover:bg-gray-100'>
                             <p className='max-sm:hidden'>{index + 1}</p>
                             <div className='flex items-center gap-2'>
-                                <img className='w-8 h-8 rounded-full' src={(typeof item.userData.image === 'string' ? item.userData.image : '/guest.png')} alt="User image" />
+                                <img className='w-8 h-8 rounded-full' src={(typeof item.userData.image === 'string' ? item.userData.image : '/guest.png')||'/guest.png'} alt="User image" />
                             </div>
                             <div>
                                 <p className='text-xs inline border border-primary px-2 rounded-full'>
                                     {item.payment ? 'online' : 'Cash'}
                                 </p>
                             </div>
-                            <p className='max-sm:hidden'>{calculateAge(item.userData.dob)}</p>
+                            <p className='max-sm:hidden'>{String(calculateAge(item.userData.dob))}</p>
                             <p>{item.slotDate}, {item.slotTime}</p>
                             <p>$ {item.amount}</p>
                             {
