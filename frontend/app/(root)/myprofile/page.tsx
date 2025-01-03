@@ -98,7 +98,7 @@ const MyProfile = () => {
         <div className="text-center">
           <label htmlFor="profileImage" className="cursor-pointer">
             <img
-              src={imagePreview || (typeof userData.image === 'string' ? userData.image : '/guest.png')}
+              src={imagePreview || (typeof userData.image === 'string' ? userData.image : '/guest.png') || '/guest.png'}
               alt="Profile"
               className="w-32 h-32 rounded-full mx-auto mb-4 border"
             />
